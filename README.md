@@ -18,7 +18,7 @@
 | | |
 |---|---|
 | 🌐 **Live demo** |  *https://nexusfounder.vercel.app* |
-| 🎬 **Demo video** |  [`View Full Demo Video`](docs/DEMO_SCRIPT.md) |
+| 🎬 **Demo video** |  [`View Full Demo Video`](https://youtu.be/oTreHf1pD0M?si=j3sXHbPcANmiZtmg) |
 | 📊 **Pitch deck** | [`View Full Pitch Deck`](https://gamma.app/docs/Antifragile-Intelligence-for-Tomorrows-Businesses-8id1faq657fkmrx) |
 
 ---
