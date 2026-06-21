@@ -17,7 +17,7 @@
 
 | | |
 |---|---|
-| 🌐 **Live demo** | `https://nexus-ai.vercel.app` *(placeholder — swap in your deployment URL)* |
+| 🌐 **Live demo** | `https://nexus-ai.vercel.app` *https://nexusfounder.vercel.app* |
 | ⚡ **Run locally** | `npm install && npm run dev` → http://localhost:3000 *(works fully on demo data even with zero keys)* |
 | 🎬 **Demo video** | See [`docs/DEMO_SCRIPT.md`](docs/DEMO_SCRIPT.md) |
 | 📊 **Pitch deck** | See [`docs/PITCH_DECK.md`](docs/PITCH_DECK.md) |
