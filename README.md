@@ -17,11 +17,7 @@
 
 | | |
 |---|---|
-<<<<<<< HEAD
-| 🌐 **Live demo** | *https://nexusfounder.vercel.app* |
-=======
 | 🌐 **Live demo** |  *https://nexusfounder.vercel.app* |
->>>>>>> 913a0f0 (readme update)
 | 🎬 **Demo video** | See [`docs/DEMO_SCRIPT.md`](docs/DEMO_SCRIPT.md) |
 | 📊 **Pitch deck** | See [`docs/PITCH_DECK.md`](docs/PITCH_DECK.md) |
 
