@@ -18,8 +18,8 @@
 | | |
 |---|---|
 | 🌐 **Live demo** |  *https://nexusfounder.vercel.app* |
-| 🎬 **Demo video** | See (docs/DEMO_SCRIPT.md) |
-| 📊 **Pitch deck** | See (docs/PITCH_DECK.md) |
+| 🎬 **Demo video** | See [`docs/DEMO_SCRIPT.md`] |
+| 📊 **Pitch deck** | See [`docs/PITCH_DECK.md`] |
 
 ---
 
