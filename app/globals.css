@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================================
+ * NEXUS AI — Design System
+ *   bg #0A0A0F · card #13131A · hover #1C1C26 · border #2A2A3A
+ *   accents → blue #378ADD · green #1D9E75 · orange #EF9F27 · red #E24B4A
+ *   Glassmorphism on cards · Space Grotesk (display) · Inter (body)
+ * ============================================================================ */
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html,
+  body {
+    background-color: #0a0a0f;
+    color: #e6e6f0;
+    font-family: var(--font-inter), system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -10%, rgba(55, 138, 221, 0.18), transparent 60%),
+      radial-gradient(ellipse 60% 40% at 100% 100%, rgba(29, 158, 117, 0.10), transparent 60%);
+    min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-space-grotesk), system-ui, sans-serif;
+    letter-spacing: -0.01em;
+  }
+
+  /* Scrollbar — themed */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a0a0f;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2a2a3a;
+    border-radius: 999px;
+    border: 2px solid #0a0a0f;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #378add;
+  }
+
+  /* Selection */
+  ::selection {
+    background: rgba(55, 138, 221, 0.35);
+    color: #ffffff;
+  }
+}
+
+@layer components {
+  /* ------- Glass card ------- */
+  .glass-card {
+    @apply rounded-2xl border border-nexus-border bg-nexus-card/60 backdrop-blur-xl;
+    background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.02) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    box-shadow:
+      0 1px 0 0 rgba(255, 255, 255, 0.04) inset,
+      0 8px 32px -12px rgba(0, 0, 0, 0.6);
+  }
+
+  .glass-card-hover {
+    @apply transition-colors duration-200 hover:bg-nexus-hover/70 hover:border-nexus-border/70;
+  }
+
+  /* ------- Section heading ------- */
+  .section-eyebrow {
+    @apply text-[11px] font-semibold uppercase tracking-[0.2em] text-nexus-muted;
+  }
+
+  /* ------- Pill / chip ------- */
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-nexus-border bg-nexus-card/60 px-3 py-1 text-xs text-nexus-muted backdrop-blur transition hover:border-accent-blue/50 hover:text-nexus-text;
+  }
+
+  /* ------- Gradient text ------- */
+  .gradient-text {
+    background: linear-gradient(90deg, #ffffff 0%, #b3c8ff 60%, #378add 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* ------- Faint dot grid backdrop ------- */
+  .dot-grid {
+    background-image: radial-gradient(rgba(42, 42, 58, 0.6) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  /* ------- Score ring count-up ------- */
+  .score-number {
+    animation: count-up 0.8s ease-out forwards;
+  }
+
+  /* ------- Risk bar staggered entrance ------- */
+  .risk-bar-fill {
+    width: 0%;
+    animation: bar-grow 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  /* ------- Panic button ------- */
+  .panic-btn {
+    @apply relative flex flex-col items-start gap-1.5 rounded-xl border border-accent-red/40 bg-accent-red/5 p-4 text-left transition-all duration-200 hover:bg-accent-red/15 hover:border-accent-red/70 hover:-translate-y-0.5 active:translate-y-0;
+  }
+  .panic-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: radial-gradient(60% 50% at 50% 0%, rgba(226, 75, 74, 0.3), transparent 70%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+  }
+  .panic-btn:hover::before {
+    opacity: 1;
+  }
+}
+
+@layer utilities {
+  /* Hide elements when printing the report */
+  @media print {
+    .no-print {
+      display: none !important;
+    }
+    body {
+      background: #ffffff !important;
+      color: #000000 !important;
+    }
+    .glass-card {
+      background: #ffffff !important;
+      border-color: #d4d4d4 !important;
+      color: #000000 !important;
+      box-shadow: none !important;
+      backdrop-filter: none !important;
+    }
+    .gradient-text {
+      -webkit-text-fill-color: #000000 !important;
+      background: none !important;
+    }
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+}
