@@ -18,7 +18,6 @@
 | | |
 |---|---|
 | 🌐 **Live demo** | *https://nexusfounder.vercel.app* |
-| ⚡ **Run locally** | `npm install && npm run dev` → http://localhost:3000  |
 | 🎬 **Demo video** | See [`docs/DEMO_SCRIPT.md`](docs/DEMO_SCRIPT.md) |
 | 📊 **Pitch deck** | See [`docs/PITCH_DECK.md`](docs/PITCH_DECK.md) |
 
