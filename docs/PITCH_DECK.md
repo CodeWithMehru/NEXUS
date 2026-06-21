@@ -141,7 +141,7 @@
 
 **On Screen (Visuals):**
 - Three-mode recap: 🛰️ **Nexus** · 🛡️ **Vanguard** · 🚀 **Young Founder**.
-- Big **QR code** + demo URL `https://nexus-ai.vercel.app` *(placeholder — regenerate from your real URL).*
+- Big **QR code** + demo URL `https://nexusfounder.vercel.app` *(placeholder — regenerate from your real URL).*
 - **"Built for Brainwave 2026 — Empowering Brains of Tomorrow."** · Mehru · mehru.codes@gmail.com
 
 **Speaker Notes (What to Say):**
